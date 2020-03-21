@@ -1,0 +1,197 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-03-21T16:07:10.964Z",
+        "line": 2,
+        "name": "client makes call to POST /kambaneducations",
+        "description": "",
+        "id": "the-message-can-be-retrieved;client-makes-call-to-post-/kambaneducations",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 199000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the client calls /kambaneducations",
+            "match": {
+              "location": "com.example.kamban.educations.StepDefsIntegrationTest.the_client_sends_POST_hello()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the client receives status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "com.example.kamban.educations.StepDefsIntegrationTest.the_client_receives_status_code_of(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the client receives server version Welcome To Kamban Educations",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome To Kamban Educations",
+                  "offset": 35
+                }
+              ],
+              "location": "com.example.kamban.educations.StepDefsIntegrationTest.the_client_receives_server_version_body(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-21T16:07:11.231Z",
+        "line": 6,
+        "name": "client makes call to GET /hello",
+        "description": "",
+        "id": "the-message-can-be-retrieved;client-makes-call-to-get-/hello",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client calls /hello",
+            "match": {
+              "location": "com.example.kamban.educations.StepDefsIntegrationTest.the_client_sends_GET_hello()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client receives status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "com.example.kamban.educations.StepDefsIntegrationTest.the_client_receives_status_code_of(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the client receives server version hello",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hello",
+                  "offset": 35
+                }
+              ],
+              "location": "com.example.kamban.educations.StepDefsIntegrationTest.the_client_receives_server_version_body(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "the message can be retrieved",
+    "description": "",
+    "id": "the-message-can-be-retrieved",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/kambaneducations.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-03-21T16:07:11.243Z",
+        "line": 2,
+        "name": "client makes call to GET /version",
+        "description": "",
+        "id": "the-version-can-be-retrieved;client-makes-call-to-get-/version",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the client calls /version",
+            "match": {
+              "location": "com.example.kamban.educations.StepDefsIntegrationTest.the_client_sends_GET_version()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the client receives status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "com.example.kamban.educations.StepDefsIntegrationTest.the_client_receives_status_code_of(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the client receives server version 1.0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1.0",
+                  "offset": 35
+                }
+              ],
+              "location": "com.example.kamban.educations.StepDefsIntegrationTest.the_client_receives_server_version_body(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "the version can be retrieved",
+    "description": "",
+    "id": "the-version-can-be-retrieved",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/version.feature",
+    "tags": []
+  }
+]
